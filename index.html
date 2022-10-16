@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+
+<body class="wrapper">
+    <!-- <div class="numberss">'1','2'</div> -->
+
+    <form action="" id="myForm">
+        <input type="text" value="" name="user" id="user" width="300px" height="80px">
+        <button class="btn">Add</button>
+    </form>
+    <div class="buttonlayout">
+        <div class="button-keys">
+            <button class="ano" onclick="onClear()"> C/CE </button>
+            <button class="off" onclick="off()">OFF</button>
+            <button class="square-root" onclick="root()">sqrt</button>
+            <button class="percentage" onclick="percentage()">%</button>
+
+
+
+
+            <button class="MRC" onclick="press5()">MRC</button>
+            <button class="M-" onclick="memory()">M-</button>
+            <button class="Mr">M+</button>
+            <button class="operator-key" data-action="divide" onclick="calculatorHandler.onClick('/')">\</button>
+
+
+
+            <button class="number" onclick="calculatorHandler.onClick(7)">7</button>
+            <button class="number" onclick="calculatorHandler.onClick(8)">8</button>
+            <button class="number" onclick="calculatorHandler.onClick(9)">9</button>
+            <button class="operator-key" data-action="multiply" onclick="calculatorHandler.onClick('*')">*</button>
+
+
+
+            <button class="number" onclick="calculatorHandler.onClick(4)">4</button>
+            <button class="number" onclick="calculatorHandler.onClick(5)">5</button>
+            <button class="number" onclick="calculatorHandler.onClick(6)">6</button>
+            <button class="operator-key" data-action="subtract" onclick="calculatorHandler.onClick('-')">-</button>
+
+
+
+            <button class="number" onclick="calculatorHandler.onClick(1)">1</button>
+            <button class="number" onclick="calculatorHandler.onClick(2)">2</button>
+            <button class="number" onclick="calculatorHandler.onClick(3)">3</button>
+            <button class="operator-key" data-action="add" onclick="calculatorHandler.onClick('+')">+</button>
+
+
+
+            <button class="number" onclick="calculatorHandler.onClick(0)">0</button>
+            <button class="point" onclick="calculatorHandler.onClick('.')">.</button>
+            <button class="equal to" onclick="calculatorHandler.evaluates()">=</button>
+            <button class="on" onclick="on()">ON</button>
+
+
+        </div>
+
+    </div>
+    <div class="operandss">
+        <label for="operand1">first value:</label> <input type="text" class="operand1" />
+        <label for="operator">input operator:</label> <input type="text" class="operator" />
+        <label for="operand2">second value:</label> <input type="text" class="operand2" />
+        <label for="answer">result:</label> <input type="text" class="answerss" />
+        <button class="submit" onclick="onadd()">submit</button>
+        <button class="submit" onclick="onclear()">clear</button>
+
+    </div>
+
+    <input type="text" class="input-glass" readonly placeholder="0." height="30px" />
+
+
+    <div class="upper-section">
+        <p style="color: white; font-size: 19px; padding-left: 7px;">DV_NATION </p>
+        <p style="color: white; font-size: 14px; position: relative; bottom: 18px; padding-left: 7px;">
+            SLD-100 N R
+           
+        </p>
+        <upp2 class="upp2"></upp2>
+        <span class="solar-section" id="solar-section">
+            123
+        </span>
+    </div>
+
+
+
+    <script src="main.js"></script>
+    <script src="users.js"></script>
+</body>
+</head>
+
+<body>
+
+</body>
+
+</html>
