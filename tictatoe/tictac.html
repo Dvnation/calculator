@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,52 +8,53 @@
     <link rel="stylesheet" href="./tictac.css">
 
 </head>
+
 <body class="wrapper">
     <div class="tic">
 
-<input  class ="toes"  name = "a" type= "text"  style="width:50px; height:40px; font-size: 25px;text-align:center;">
-<input  class ='toes' name = "b" type= "text"  style="width:50px; height:40px; font-size: 25px; text-align:center;">
-<input  class ='toes'  name = "c" type= "type" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
-<input  class ='toes' type= "text" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
-<input  class ='toes' type= "text" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
-<input  class ='toes' type= "text" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
-<input  class ='toes' type= "text" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
-<input  class ='toes' type= "text" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
-<input  class ='toes' type= "text"  style="width:50px; height:40px; font-size:25px; text-align:center;">
+        <input class="toe" id="toe_1" onclick="userPlay(1)" type="button" style="width:50px; height:40px; font-size: 25px;text-align:center;">
+        <input class='toe' id="toe_2" onclick="userPlay(2)" type="button" style="width:50px; height:40px; font-size: 25px; text-align:center;">
+        <input class='toe' id="toe_3" onclick="userPlay(3)" type="button" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
+        <input class='toe' id="toe_4" onclick="userPlay(4)" type="button" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
+        <input class='toe' id="toe_5" onclick="userPlay(5)" type="button" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
+        <input class='toe' id="toe_6" onclick="userPlay(6)" type="button" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
+        <input class='toe' id="toe_7" onclick="userPlay(7)" type="button" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
+        <input class='toe' id="toe_8" onclick="userPlay(8)" type="button" style="width:50px; height:40px ; font-size: 25px; text-align:center;">
+        <input class='toe' id="toe_9" onclick="userPlay(9)" type="button" style="width:50px; height:40px; font-size:25px; text-align:center;">
 
     </div>
 
-<div id="strike-l1hor"></div>
-<div id="strike-l2hor"></div>
-<div id="strike-l3hor"></div>
-<div id="strike-l1ver"></div>
-<div id="strike-l2ver"></div>
-<div id="strike-l3ver"></div>
-<div id="strike-diagonal1"></div>
-<div id="strike-diagonal2"></div>
-    
-<div class="new">
-      <input id="formss" name="brown" type="text"  placeholder="username"/>
-       <br> <input id="formz" type="text" placeholder="result"></br>
-        <input id="formsss" type="text" placeholder="score"/>
-        <input id="formal" type="text" placeholder="response"/>
-      
-        <button id="buttons" onclick="play()" type="submit">Submit</button>
-       <!-- <button id="button">sub</button> -->
+    <div id="strike-l1hor"></div>
+    <div id="strike-l2hor"></div>
+    <div id="strike-l3hor"></div>
+    <div id="strike-l1ver"></div>
+    <div id="strike-l2ver"></div>
+    <div id="strike-l3ver"></div>
+    <div id="strike-diagonal1"></div>
+    <div id="strike-diagonal2"></div>
 
-</div> 
+    <div class="new">
+        <input id="username" name="brown" type="text" placeholder="username" />
+        <br> <input id="formz" type="text" placeholder="result"></br>
+        <input id="formsss" type="text" placeholder="score" />
+        <input id="formal" type="text" placeholder="response" />
 
-<div class="gameover">
-    <h1>GAME OVER</h1>
-    <h3>DO YOU WISH TO CONTINUE</h3>
-    <button id="yes" onclick="playon()">yes</button>
-    <button id="no" onclick="quit()">no</button>
-</div>
+        <button id="buttons" onclick="play()" type="submit">PLAY</button>
+        <!-- <button id="button">sub</button> -->
 
-<div class="Thanks">
-</div>
+    </div>
 
-<script src="./tictac.js"></script> 
+    <div class="gameover">
+        <h1>GAME OVER</h1>
+        <h3>DO YOU WISH TO CONTINUE</h3>
+        <button id="yes" onclick="playon()">yes</button>
+        <button id="no" onclick="quit()">no</button>
+    </div>
+
+    <div class="Thanks">
+    </div>
+
+    <script src="./tictac.js"></script>
 </body>
 
 </html>
