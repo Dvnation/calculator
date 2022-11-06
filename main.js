@@ -10,7 +10,7 @@ const getEquation = () => document.querySelector('.input-glass').value;
 
 setInterval(() => {
     document.getElementById("solar-section").innerHTML = localStorage.getItem('result');
-}, 200);
+});
 
 let calculatorHandler = {
     isEvaluated: false,
@@ -33,7 +33,7 @@ let calculatorHandler = {
             clearScreen();
 
             onButtonClick(valuekk)
-            calculatorHandler.isEvaluated = false;
+           calculatorHandler.isEvaluated = false;
         } else {
             onButtonClick(valuekk)
         }
@@ -110,4 +110,10 @@ const calculatePercentage = () => {
     }else{
         setScreen("invalid selection")
     }
+}
+
+function bream(car){
+    car = 5*5
+   onButtonClick(car)
+   
 }

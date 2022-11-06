@@ -1,0 +1,127 @@
+.wrapper{
+    background-color: red;
+}
+
+
+.tic{
+    display: grid;
+   grid-template-columns: repeat(3,50px);
+   grid-template-rows: repeat(3,41px);
+   position:absolute;
+   left:30em;
+   top:8em;
+}
+
+#strike-l1hor{
+    position: absolute;
+    background-color: black;
+    width: 142px;
+    height: 1.4px ;
+    bottom:11.4em;
+    left:30.3em;
+    visibility: hidden;
+    
+}
+
+#strike-l2hor{
+    position: absolute;
+    background-color: black;
+    width: 142px;
+    height: 1.4px;
+    bottom:8.8em;
+    left:30.3em;
+    visibility: hidden;
+    
+}
+
+#strike-l3hor{
+    position: absolute;
+    background-color: black;
+    width: 142px;
+    height: 1.4px ;
+    bottom:6.2em;
+    left:30.3em;
+    visibility: hidden;
+    
+}
+
+#strike-l1ver{
+    position: absolute;
+    background-color: black;
+    width: 114px;
+    height: 0.4px ;
+    bottom:8.8em;
+    left: 28.3em;
+    visibility: hidden;
+    transform: rotate(90deg);
+
+    box-sizing: border-box;
+    
+}
+
+#strike-l2ver{
+    position: absolute;
+    background-color: black;
+    width: 114px;
+    height: 0.4px ;
+    bottom:8.8em;
+    left: 31.2em;
+    visibility: hidden;
+    transform: rotate(90deg);
+    
+}
+
+#strike-l3ver{
+    position: absolute;
+    background-color: black;
+    width: 114px;
+    height: 0.4px ;
+    bottom:8.8em;
+    left: 34.3em;
+    visibility: hidden;
+    transform: rotate(90deg);
+    
+}
+
+.gameover{
+    visibility: hidden;
+}
+
+.Thanks{
+    border: 2px solid black;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+    background-color: aquamarine;
+    position: relative;
+    bottom: 70px;
+    visibility: hidden;
+}
+
+#strike-diagonal1{
+     
+     position: absolute;
+     background-color: black;
+     width: 162px;
+     height: 0.4px ;
+     bottom:8.8em;
+     left: 29.66em;
+     visibility: hidden;
+     transform: rotate(39deg);
+     
+
+}
+
+#strike-diagonal2{
+      
+    position: absolute;
+    background-color: black;
+    width: 162px;
+    height: 0.4px ;
+    bottom:8.8em;
+    left: 29.66em;
+    visibility: hidden;
+    transform: rotate(-39deg);
+    
+}
